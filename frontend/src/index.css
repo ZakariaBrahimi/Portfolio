@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#devider{
+    width: calc(100% + 6rem + 6rem);
+    margin-left: -6rem;
+}
+
+.cardBGColor{
+    background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+
+#submitBtn{
+    background-color: rgba(36,37,46,1);
+}
