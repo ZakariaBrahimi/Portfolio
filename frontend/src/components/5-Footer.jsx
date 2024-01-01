@@ -8,10 +8,9 @@ const Footer = () => {
             <li><a className="hover:text-darkGreen transition-all text-sm hover:text-base duration-500 font-semibold" href="">Speaking</a></li>
             <li><a className="hover:text-darkGreen transition-all text-sm hover:text-base duration-500 font-semibold" href="">Uses</a></li>
         </ul>
-        <p className="text-subtitle">© 2023 Spencer Sharp. All rights reserved.</p>
+        <p className="text-subtitle">© 2023 Zakaria Abdessamed Brahimi. All rights reserved.</p>
 
     </footer>
   )
 }
-
 export default Footer
