@@ -1,4 +1,4 @@
-import contactUs from '../assets/contactUs.json'
+import {contactUs} from '../assets/contactUs.json'
 import Lottie from "lottie-react";
 
 
