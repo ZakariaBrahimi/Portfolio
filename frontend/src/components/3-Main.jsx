@@ -28,7 +28,6 @@ const Main = () => {
         >
           React & Django
         </button>
-        {/* <button className="bg-borderColor text-center w-10/12 py-2 rounded-lg font-semibold hover:border-darkGreen" type="button">Django</button> */}
       </div>
 
       <div className="grid grid-cols-1 mx-12 sm:mx-0 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-12 gap-x-6">

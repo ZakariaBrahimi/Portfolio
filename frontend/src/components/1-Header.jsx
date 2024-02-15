@@ -87,7 +87,7 @@ const Header = () => {
               className="hover:text-darkGreen transition-all text-sm hover:text-base duration-500  "
               href="#"
             >
-              Articles
+              Education
             </a>
           </li>
           <li className="">
@@ -104,6 +104,14 @@ const Header = () => {
               href="#"
             >
               Speaking
+            </a>
+          </li>
+          <li className="">
+            <a
+              className="hover:text-darkGreen transition-all text-sm hover:text-base duration-500  "
+              href="#"
+            >
+              My Skills
             </a>
           </li>
           <li className="">
