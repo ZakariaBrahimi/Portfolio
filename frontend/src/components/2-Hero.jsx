@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import heroAnimation from "../../public/heroAnimation.json";
+import heroAnimation from "../assets/heroAnimation.json";
 import myPicture from "../assets/myPic3.jpg";
 import verifiedAnimation from '../assets/verifiedAnimation1.json'
 

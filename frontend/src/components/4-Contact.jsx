@@ -1,6 +1,6 @@
 // import contactUs from '../assets/contactUs.json'
 import Lottie from "lottie-react";
-import contactUs from '../../public/contactUs.json'
+import contactUs from '../assets/contactUs.json'
 
 const Contact = () => {
   return (
