@@ -1,0 +1,27 @@
+{
+    "projects": [
+      {
+        "title": "Hashnode Clone",
+        "description": "Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae hellow world ok ok.",
+        "codeLink": "https://github.com/yourusername/project1",
+        "liveLink": "https://yourproject1liveurl.com",
+        "preview": "../../src/assets/S1.png",
+        "tags": ["Web Development", "JavaScript", "React"]
+      },
+      {
+        "title": "SenaResearch",
+        "description": "Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae hellow world ok ok.",
+        "codeLink": "https://github.com/yourusername/project2",
+        "liveLink": "https://yourproject2liveurl.com",
+        "tags": ["Data Science", "Python", "Machine Learning"]
+      },
+      {
+        "title": "Project 3",
+        "description": "Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae hellow world ok ok.",
+        "codeLink": "https://github.com/yourusername/project3",
+        "liveLink": "https://yourproject3liveurl.com",
+        "tags": ["Mobile App", "Flutter", "Firebase"]
+      }
+    ]
+  }
+  

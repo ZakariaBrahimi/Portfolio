@@ -1,7 +1,17 @@
 import project1 from "../assets/project-1.jpg";
-import {useState} from "react"
+import {useEffect, useState} from "react"
+
 const Main = () => {
     const [showModal, setShowModal] = useState(false);
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+      fetch('../../public//data/portfolio.json')
+        .then(response => response.json())
+        .then(data => setProjects(data.projects))
+        .catch(error => console.error('Error fetching portfolio:', error));
+    }, []);
+    
 
   return (
     <main className="flex my-24 gap-12 md:flex-row flex-col">
@@ -33,17 +43,17 @@ const Main = () => {
       </div>
 
       <div className="grid grid-cols-1 mx-12 sm:mx-0 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-12 gap-x-6">
-        {[1, 2, 3, 4, 5].map((item) => (
-          <div key={item} className="flex hover:border-darkGreen hover:border rounded-lg flex-col hover:cursor-pointer hover:rotate-1 duration-500 hover:scale-105 transition-transform">
+        {projects.map((project, index) => (
+          <div key={index} className="flex hover:border-darkGreen hover:border rounded-lg flex-col hover:cursor-pointer hover:rotate-1 duration-500 hover:scale-105 transition-transform">
             <div className="rounded-lg">
-              <img className="h-full w-full rounded-lg" src={project1} alt="" />
+              <img className="h-full w-full rounded-lg" src={project.preview} alt="" />
             </div>
             <div className=" flex flex-col gap-2 p-3 cardBGColor rounded-md">
               <h2 className="font-semibold text-base text-title">
-                Sena Research
+                {project?.title}
               </h2>
               <p className=" text-subtitle text-sm ">
-              Sena Research is a platform designed to serve as an intermediary between students and university professors across all academic disciplines. The platform's mission is to deliver top-notch educational services, facilitating students in successfully navigating their academic endeavors.
+              {project?.description}
               </p>
               <div className="flex justify-between mt-3 items-center">
                 <div className="flex gap-3">
@@ -104,64 +114,7 @@ const Main = () => {
           </div>
         ))}
       </div>
-      <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-        type="button"
-        onClick={() => setShowModal(true)}
-      >
-        Open regular modal
-      </button>
-      {showModal ? (
-        <>
-          <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-primary outline-none focus:outline-none">
-                {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">
-                    Sena Research
-                  </h3>
-                  <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                      ×
-                    </span>
-                  </button>
-                </div>
-                {/*body*/}
-                <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                  Sena Research is a platform designed to serve as an intermediary between students and university professors across all academic disciplines. The platform's mission is to deliver top-notch educational services, facilitating students in successfully navigating their academic endeavors.
-                  </p>
-                </div>
-                {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                  <button
-                    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Close
-                  </button>
-                  <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Save Changes
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-        </>
-      ) : null}
+      
     </main>
   );
 };
