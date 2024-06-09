@@ -16,7 +16,7 @@ const Education = () => {
       </h2>
       <ul className="flex flex-col mt-7">
         
-        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500 my-2 shadow-lg">
+        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500 my-2 shadow-lg b">
           <h2
             onClick={()=>{setMasterAccordion(!masterAccordion)}}
             className="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
