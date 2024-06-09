@@ -5,8 +5,8 @@ import myPicture from "../assets/myPic3.jpg";
 
 const Hero = () => {
   return (
-    <section className=" text-white my-12 flex flex-col gap-16 py-10">
-      <div className="w-full flex flex-col gap-6 bg-sky-60">
+    <section className=" dark:text-white my-12 flex flex-col gap-16 py-10 text-[#1A202C]">
+      <div className="w-full flex flex-col gap-6 bg-sky-60 ">
         <div className="flex gap-6 items-end ">
           <img
             className=" h-32 w-32 border-4 shadow-md shadow-darkGreen border-darkGreen rounded-full   flex-col hover:cursor-pointer hover:rotate-1 duration-500 hover:scale-105 transition-transform"
@@ -21,7 +21,7 @@ const Hero = () => {
               /> */}
           </div>
         </div>
-        <h1 className="flex items-center gap-3 font-bold text-3xl leading-[3.3rem] text-title">
+        <h1 className="flex items-center gap-3 font-bold text-3xl leading-[3.3rem] dark:text-title text-[#1A202C]">
           {/* <Lottie
             className="w-12 h-12 bg-green-30"
             animationData={verifiedAnimation}
@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
           {/* Software Developer |  */}
         </h1>
-        <p className="opacity- leading-7 text-base text-subtitle">
+        <p className="opacity- leading-7 text-base dark:text-subtitle text-[#1A202C]">
           👋 Solution-oriented and problem solver with 2 years of experience
           building and maintaining software. Enthusiastic about Agile management
           and collaborating with teams to deliver impactful products. Currently
@@ -63,7 +63,7 @@ const Hero = () => {
         <div className="flex gap-3 items-center">
           <div className="flex gap-4 items-center ">
             <a
-              className="bg-[#ffffff14] p-3 rounded-md hover:bg-[#3F444E] transition-colors duration-500"
+              className="dark:bg-[#ffffff14] p-3 rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500"
               aria-label="My Github"
               href="https://github.com/rofazayn"
               target="_blank"
@@ -85,7 +85,7 @@ const Hero = () => {
               </svg>
             </a>
             <a
-              className="bg-[#ffffff14] p-3 rounded-md hover:bg-[#3F444E] transition-colors duration-500"
+              className="dark:bg-[#ffffff14] p-3 rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500"
               aria-label="My Github"
               href="https://github.com/rofazayn"
               target="_blank"
@@ -102,7 +102,7 @@ const Hero = () => {
               </svg>
             </a>
             <a
-              className="bg-[#ffffff14] p-3 rounded-md hover:bg-[#3F444E] transition-colors duration-500"
+              className="dark:bg-[#ffffff14] p-3 rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500"
               aria-label="My Github"
               href="https://github.com/rofazayn"
               target="_blank"
@@ -120,7 +120,7 @@ const Hero = () => {
               </svg>
             </a>
             <a
-              className="bg-[#ffffff14] p-3 rounded-md hover:bg-[#3F444E] transition-colors duration-500"
+              className="dark:bg-[#ffffff14] p-3 rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500"
               aria-label="My Github"
               href="https://github.com/rofazayn"
               target="_blank"
@@ -142,7 +142,7 @@ const Hero = () => {
               </button> */}
           </div>
           <span className="mx-6 font-bold">Or</span>
-          <a className="underline flex items-center gap-3 cursor-pointer font-medium">
+          <a className="underline flex items-center gap-2 cursor-pointer font-medium hover:text-darkGreen transition-colors duration-500 font-semibold">
             <span>Download My Resume</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

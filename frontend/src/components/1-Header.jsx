@@ -7,8 +7,8 @@ const Header = () => {
   //   TODO: When clicked on any point in the menu, we should close the modal window
   //   const popUpRef = useRef(null)
   return (
-    <header className="flex justify-between px- md:px-0 py-5 ">
-      <nav className=" animate-fade hidden md:flex   text-white opacity-90 ">
+    <header className="flex justify-between px- md:px-0 py-5 text-[#1A202C]">
+      <nav className=" animate-fade hidden md:flex   dark:text-white opacity-90 ">
       <span className=" flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-extrabol font-black">
         <Lottie
           className="w-9 h-9   bg-green-30"
@@ -18,7 +18,7 @@ const Header = () => {
         {"Portfolio."}
       </span>
         <ul className="flex items-center gap-3 font-bold">
-          <li className="bg-[#3F444E] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
+          <li className="dark:bg-[#3F444E] bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
             <a
               className=" "
               href="#"
@@ -26,7 +26,7 @@ const Header = () => {
               Home
             </a>
           </li>
-          <li className="hover:bg-[#3F444E] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
+          <li className="dark:hover:bg-[#3F444E] hover:bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
             <a
               className=" opacity-80 hover:opacity-100 transition-opacity"
               href="#"
@@ -34,7 +34,7 @@ const Header = () => {
               Education
             </a>
           </li>
-          <li className="hover:bg-[#3F444E] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
+          <li className="dark:hover:bg-[#3F444E] hover:bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
             <a
               className="opacity-80 hover:opacity-100 transition-opacity "
               href="#"
@@ -68,11 +68,11 @@ const Header = () => {
           </li> */}
         </ul>
       </nav>
-        <button className="rounded-full p-2 border-borderColor hover:bg[] border-2 bg-bgHeader hover:bg-[#3F444E]">
+        <button className="rounded-full p-2 dark:border-borderColor transition-colors duration-500 hover:bg[] border dark:bg-bgHeader dark:hover:bg-[#3F444E] bg-transparent hover:bg-[#EDF2F7]">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500"
+            className="hidde h-6 w-6 dark:fill-zinc-700 dark:stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500"
           >
             <path
               d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
