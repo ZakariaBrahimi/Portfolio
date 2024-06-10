@@ -1,46 +1,45 @@
-import { useState } from "react";
 import verifiedAnimation from "../assets/verifiedAnimation1.json";
 import Lottie from "lottie-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
   //   TODO: When clicked on any point in the menu, we should close the modal window
   //   const popUpRef = useRef(null)
   return (
-    <header className="flex justify-between px- md:px-0 py-5 text-[#1A202C]">
+    <header className="md:w-8/12 mx-auto  flex justify-between px- md:px-0 py-5 text-[#1A202C] mb-8">
       <nav className=" animate-fade hidden md:flex   dark:text-white opacity-90 ">
-      <span className=" flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-extrabol font-black">
+      <Link to={'/'} className=" flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-extrabol font-black">
         <Lottie
           className="w-9 h-9   bg-green-30"
           animationData={verifiedAnimation}
           loop={false}
         />
         {"Portfolio."}
-      </span>
+      </Link>
         <ul className="flex items-center gap-3 font-bold">
           <li className="dark:bg-[#3F444E] bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
-            <a
+            <Link
               className=" "
-              href="#"
+              to="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className="dark:hover:bg-[#3F444E] hover:bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
             <a
               className=" opacity-80 hover:opacity-100 transition-opacity"
-              href="#"
+              href="#education"
             >
               Education
             </a>
           </li>
           <li className="dark:hover:bg-[#3F444E] hover:bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
-            <a
+            <Link
               className="opacity-80 hover:opacity-100 transition-opacity "
-              href="#"
+              to="/works"
             >
               Projects
-            </a>
+            </Link>
           </li>
           {/* <li className="hover:bg-[#3F444E] px-3 py-1 rounded-lg transition-all  duration-500">
             <a

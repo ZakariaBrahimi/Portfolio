@@ -10,7 +10,7 @@ const Education = () => {
   };
   // const handleRotate = ()=>{}
   return (
-    <div className="border-b pb-3 border-[#E2E8F0] dark:border-[#ffffff29]">
+    <div id="education" className="border-b pb-3 border-[#E2E8F0] dark:border-[#ffffff29]">
       <h2 className="font-black text-xl border-b pb-3 border-[#E2E8F0] dark:border-[#ffffff29]">
         🎓 Education
       </h2>
