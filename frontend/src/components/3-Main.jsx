@@ -107,8 +107,10 @@ const Main = () => {
           </li>
         ))}
       </ol>
-      <div className="bg-[#ffffff0f] mb-12 rounded-xl text-center ">
-        <p className="flex items-center justify-center gap-3 py-4 px-5  ">
+      {/* <div className="bg-[#ffffff0f] mb-12 rounded-xl text-center "> */}
+        <div className="bg-[#ffffff0f] mb-12 rounded-xl text-cente    flex items-center justify-center gap-3 py-4 px-5  ">
+          <div>
+
           <svg viewBox="0 0 24 24" focusable="false" className=" w-4 h-4">
             <g
               fill="currentColor"
@@ -127,18 +129,23 @@ const Main = () => {
               <circle cx="11.959" cy="7" r="1" stroke="none"></circle>
             </g>
           </svg>
-          Currently available for work, download my Resume by
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline-block underline font-semibold hover:text-darkGreen transition-colors"
-            href="/static/lucas-r-zain-resume.pdf"
-            download=""
-          >
-            Clicking here!
-          </a>
-        </p>
-        <a
+          </div>
+          <p>
+            <span>Currently available for work, download my Resume by </span>
+            
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" md:inline-block underline font-semibold hover:text-darkGreen transition-colors"
+              href="/static/lucas-r-zain-resume.pdf"
+              download=""
+            >
+              Clicking here!
+            </a>
+
+          </p>
+        </div>
+        {/* <a
             target="_blank"
             rel="noopener noreferrer"
             className=" md:hidden underline font-semibold hover:text-darkGreen transition-colors"
@@ -146,9 +153,9 @@ const Main = () => {
             download=""
           >
             Clicking here!
-          </a>
+          </a> */}
 
-      </div>
+      {/* </div> */}
 
       {/* </div> */}
     </div>
