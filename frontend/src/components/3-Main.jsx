@@ -6,7 +6,7 @@ const works = [
     role: "Fullstack developer & Product Manager",
     description:
       "Sena Research is a platform designed to serve as an intermediary between students and university professors across all academic disciplines. The platform's mission is to deliver top-notch educational services, facilitating students in successfully navigating their academic endeavors.",
-    period: "June 01, 2024",
+    period: "Jan, 2024 - Present",
     link: "https://senaresearch-dz.com",
     tags: [
       "Educational Services",
@@ -19,7 +19,7 @@ const works = [
     companyName: "Moustachir",
     role: "Freelance Fullstack developer",
     description: "Moustachir is an online consulting platform that offers you the opportunity to benefit from professional consultations by the best Algerian and international specialists in various fields ",
-    period: "December, 2022 - February 2024",
+    period: "Dec, 2022 - Feb 2024",
     link: "https://moustachir.dz/en/",
     tags: ["Professional Consultations", 'Remote Advisory Services', 'Client-Centered Approach'],
   },
@@ -27,7 +27,7 @@ const works = [
     companyName: "Ma Nanny Parisienne",
     role: "Fullstack Developer",
     description: "Top of the range babysitting and childcare service available 24/7",
-    period: "December, 2022 - February 2024",
+    period: "Nov, 2023 - Apr 2024",
     link: "https://www.manannyparisienne.com/en.html",
     tags: ['High-End Childcare', 'Hotel Collaboration'],
   },
@@ -35,7 +35,7 @@ const works = [
     companyName: "The Sparks Foundation",
     role: "Frontend Developer Intern",
     description: "The sparks foundation is working to bring parity in education, making sure children have equal opportunity at success, irrespective of the financial background.",
-    period: "January, 2022 - March 2022",
+    period: "Jan, 2022 - Mar 2022",
     link: "https://www.thesparksfoundationsingapore.org/",
     tags: [
       'Skill Development',
@@ -47,7 +47,7 @@ const works = [
     companyName: "Alpha Center",
     role: "Web Development Inspector",
     description: "taught almost 42 learners how the internet works and Practiced HTML, CSS, Git, Tailwind css, and Javascript - Covered advanced frontend skills such as flexbox, grid, asynchronous javascript, and a little bit of reactjs framework - built together several web apps such as todo app, URL shortener, landing pages, and many others from frontendmentor.io",
-    period: "May, 2021 - March, 2022",
+    period: "May, 2021 - Mar, 2022",
     link: "https://web.facebook.com/p/Alpha-Center-100069073866473/?_rdc=1&_rdr",
     tags: [
       'Youth Development',
@@ -80,7 +80,7 @@ const Main = () => {
                   <div>
                     <a
                       className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                      href="https://scout.camd.northeastern.edu/"
+                      href={work.link}
                       target="_blank"
                       rel="noreferrer noopener"
                       aria-label="Developer at Scout Studio (opens in a new tab)"
@@ -178,6 +178,6 @@ const Main = () => {
       {/* </div> */}
     </div>
   );
-};
+}
 
 export default Main;
