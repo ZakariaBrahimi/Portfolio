@@ -89,7 +89,7 @@ const Footer = () => {
               <a
                 className="dark:bg-[#ffffff14] p-3 rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500"
                 aria-label="My Github"
-                href="https://github.com/rofazayn"
+                href="https://github.com/ZakariaBrahimi/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -110,8 +110,8 @@ const Footer = () => {
               </a>
               <a
                 className="dark:bg-[#ffffff14] p-3 rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500"
-                aria-label="My Github"
-                href="https://github.com/rofazayn"
+                aria-label="My LinkedIn"
+                href="https://www.linkedin.com/in/zakariaabdessamed/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -127,8 +127,8 @@ const Footer = () => {
               </a>
               <a
                 className="dark:bg-[#ffffff14] p-3 rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500"
-                aria-label="My Github"
-                href="https://github.com/rofazayn"
+                aria-label="My Leetcode"
+                href="https://leetcode.com/u/ZakariaAbdessamedBrahimi/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -145,8 +145,8 @@ const Footer = () => {
               </a>
               <a
                 className="dark:bg-[#ffffff14] p-3 rounded-md dark:hover:bg-[#3F444E] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-colors duration-500"
-                aria-label="My Github"
-                href="https://github.com/rofazayn"
+                aria-label="My Instagram"
+                href="https://www.instagram.com/zakaria_abdessamed_brahimi/"
                 target="_blank"
                 rel="noreferrer"
               >

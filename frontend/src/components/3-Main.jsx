@@ -1,35 +1,59 @@
+import myResume from '../assets/ResumeV2.pdf'
+
 const works = [
   {
     companyName: "SenaResearch",
     role: "Fullstack developer & Product Manager",
-    Description: "Sena Research is",
+    description:
+      "Sena Research is a platform designed to serve as an intermediary between students and university professors across all academic disciplines. The platform's mission is to deliver top-notch educational services, facilitating students in successfully navigating their academic endeavors.",
     period: "June 01, 2024",
-    link: "sena-research-dz.com",
-    tags: [],
+    link: "https://senaresearch-dz.com",
+    tags: [
+      "Educational Services",
+      "Academic Intermediary",
+      "Student Support",
+      "University Collaboration",
+    ],
   },
   {
     companyName: "Moustachir",
     role: "Freelance Fullstack developer",
-    Description: "Moustachir is ....",
-    period: "December, 2022 - ",
-    link: "moustachir.com",
-    tags: ["Education", ],
+    description: "Moustachir is an online consulting platform that offers you the opportunity to benefit from professional consultations by the best Algerian and international specialists in various fields ",
+    period: "December, 2022 - February 2024",
+    link: "https://moustachir.dz/en/",
+    tags: ["Professional Consultations", 'Remote Advisory Services', 'Client-Centered Approach'],
   },
   {
-    companyName: "Ma Nanny Partissien",
-    role: "Fullstack developer",
-    Description: "Moustachir is ....",
-    period: "June 01, 2024",
-    link: "moustachir.com",
-    tags: [],
+    companyName: "Ma Nanny Parisienne",
+    role: "Fullstack Developer",
+    description: "Top of the range babysitting and childcare service available 24/7",
+    period: "December, 2022 - February 2024",
+    link: "https://www.manannyparisienne.com/en.html",
+    tags: ['High-End Childcare', 'Hotel Collaboration'],
   },
   {
-    companyName: "Ma Nanny Partissien",
-    role: "Fullstack developer",
-    Description: "Moustachir is ....",
-    period: "June 01, 2024",
-    link: "moustachir.com",
-    tags: [],
+    companyName: "The Sparks Foundation",
+    role: "Frontend Developer Intern",
+    description: "The sparks foundation is working to bring parity in education, making sure children have equal opportunity at success, irrespective of the financial background.",
+    period: "January, 2022 - March 2022",
+    link: "https://www.thesparksfoundationsingapore.org/",
+    tags: [
+      'Skill Development',
+      'Community Engagement',
+      'Student Mentorship'
+    ],
+  },
+  {
+    companyName: "Alpha Center",
+    role: "Web Development Inspector",
+    description: "taught almost 42 learners how the internet works and Practiced HTML, CSS, Git, Tailwind css, and Javascript - Covered advanced frontend skills such as flexbox, grid, asynchronous javascript, and a little bit of reactjs framework - built together several web apps such as todo app, URL shortener, landing pages, and many others from frontendmentor.io",
+    period: "May, 2021 - March, 2022",
+    link: "https://web.facebook.com/p/Alpha-Center-100069073866473/?_rdc=1&_rdr",
+    tags: [
+      'Youth Development',
+      'Social Services',
+      'Skill Training'
+    ],
   },
 ];
 
@@ -63,7 +87,7 @@ const Main = () => {
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                       <span className=" font-bold">
-                        {work?.role} {' '} · {' '}
+                        {work?.role} ·{" "}
                         <span className="inline-block">
                           {work?.companyName}
                           <svg
@@ -85,22 +109,19 @@ const Main = () => {
                   </div>
                 </h3>
                 <p className="mt-2 text-sm leading-normal">
-                  Collaborated with other student designers and engineers on
-                  pro-bono projects to create new brands, design systems, and
-                  websites for organizations in the community.
+                  {work?.description}
                 </p>
                 <ul
                   className="mt-2 flex flex-wrap"
                   aria-label="Technologies used"
                 >
-                  {work?.tags?.map((tag, index)=>(
+                  {work?.tags?.map((tag, index) => (
                     <li key={index} className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                         {tag}
                       </div>
                     </li>
-                  )
-                  )}
+                  ))}
                 </ul>
               </div>
             </div>
@@ -108,9 +129,8 @@ const Main = () => {
         ))}
       </ol>
       {/* <div className="bg-[#ffffff0f] mb-12 rounded-xl text-center "> */}
-        <div className="bg-[#ffffff0f] mb-12 rounded-xl text-cente    flex items-center justify-center gap-3 py-4 px-5  ">
-          <div>
-
+      <div className="bg-[#ffffff0f] mb-12 rounded-xl text-cente    flex items-center justify-center gap-3 py-4 px-5  ">
+        <div>
           <svg viewBox="0 0 24 24" focusable="false" className=" w-4 h-4">
             <g
               fill="currentColor"
@@ -129,23 +149,21 @@ const Main = () => {
               <circle cx="11.959" cy="7" r="1" stroke="none"></circle>
             </g>
           </svg>
-          </div>
-          <p>
-            <span>Currently available for work, download my Resume by </span>
-            
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" md:inline-block underline font-semibold hover:text-darkGreen transition-colors"
-              href="/static/lucas-r-zain-resume.pdf"
-              download=""
-            >
-              Clicking here!
-            </a>
-
-          </p>
         </div>
-        {/* <a
+        <p>
+          <span>Currently available for work, download my Resume by </span>
+
+          <a href={myResume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" md:inline-block underline font-semibold hover:text-darkGreen transition-colors"
+            download=""
+          >
+            Clicking here!
+          </a>
+        </p>
+      </div>
+      {/* <a
             target="_blank"
             rel="noopener noreferrer"
             className=" md:hidden underline font-semibold hover:text-darkGreen transition-colors"
