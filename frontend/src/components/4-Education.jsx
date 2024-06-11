@@ -10,7 +10,7 @@ const Education = () => {
 
 
   return (
-    <div id="education" className=" pb-6 order-b  border-[#E2E8F0] dark:border-[#ffffff29] ">
+    <div  className=" pb-6 order-b  border-[#E2E8F0] dark:border-[#ffffff29] ">
       <h2 className="font-black text-xl border-b pb-3 border-[#E2E8F0] dark:border-[#ffffff29]">
         🎓 Education
       </h2>

@@ -1,7 +1,7 @@
 import verifiedAnimation from "../assets/verifiedAnimation1.json";
 import Lottie from "lottie-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   //   TODO: When clicked on any point in the menu, we should close the modal window
@@ -10,9 +10,9 @@ const Header = () => {
   return (
     <header className=" flex justify-between py-5 text-[#1A202C] mb-8">
       <nav className=" animate-fade hidden md:flex   dark:text-white opacity-90 ">
-        <Link
+        <NavLink
           to={"/"}
-          className=" flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-extrabol font-black"
+          className={({ isActive, isPending })=>`flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-black `}
         >
           <Lottie
             className="w-9 h-9   bg-green-30"
@@ -20,28 +20,29 @@ const Header = () => {
             loop={true}
           />
           {"Portfolio."}
-        </Link>
+        </NavLink>
         <ul className="flex items-center gap-3 font-bold">
-          <li className="dark:bg-[#3F444E] bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
-            <Link className=" " to="/">
+          <li >
+            <NavLink className={({ isActive, isPending })=>`   px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer hover:dark:bg-[#3F444E] hover:bg-[#EDF2F7] ${isActive ? 'dark:bg-[#3F444E] bg-[#EDF2F7]' : ''}`} to="/">
               Home
-            </Link>
+            </NavLink>
           </li>
-          <li className="dark:hover:bg-[#3F444E] hover:bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
-            <a
-              className=" opacity-80 hover:opacity-100 transition-opacity"
-              href="#education"
-            >
-              Education
-            </a>
-          </li>
-          <li className="dark:hover:bg-[#3F444E] hover:bg-[#EDF2F7] px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer">
-            <Link
-              className="opacity-80 hover:opacity-100 transition-opacity "
+          
+          <li>
+            <NavLink
+              className={({ isActive, isPending })=>`   px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer hover:dark:bg-[#3F444E] hover:bg-[#EDF2F7] ${isActive ? 'dark:bg-[#3F444E] bg-[#EDF2F7]' : ''}`}
               to="/works"
             >
               Projects
-            </Link>
+            </NavLink>
+          </li>
+          <li className="">
+            <NavLink
+              className={({ isActive, isPending })=>`   px-3 py-1 rounded-lg transition-all  duration-500 cursor-pointer hover:dark:bg-[#3F444E] hover:bg-[#EDF2F7] ${isActive ? 'dark:bg-[#3F444E] bg-[#EDF2F7]' : ''}`}
+              to="volunteering"
+            >
+              Volunteering
+            </NavLink>
           </li>
         </ul>
       </nav>
