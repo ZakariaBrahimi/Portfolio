@@ -166,7 +166,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-between items-center font-bold mt-28 ">
         <p>Developed in Algeria with ♥️</p>
-        <p className="hidden md:inline-block">© 2024 Lucas' Portfolio</p>
+        <p className="hidden md:inline-block">© 2024 B. Zakaria Portfolio</p>
       </div>
     </footer>
   );
