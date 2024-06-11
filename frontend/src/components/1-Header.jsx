@@ -9,13 +9,13 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className=" flex justify-between py-5 text-[#1A202C] mb-8">
-      <nav className=" animate-fade hidden md:flex   dark:text-white opacity-90 ">
+      <nav className=" animate-fade hidden sm:flex   dark:text-white opacity-90 ">
         <NavLink
           to={"/"}
           className={({ isActive, isPending })=>`flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-black `}
         >
           <Lottie
-            className="w-9 h-9   bg-green-30"
+            className="w-9 h-9 bg-green-30"
             animationData={verifiedAnimation}
             loop={true}
           />
@@ -95,51 +95,55 @@ const Header = () => {
 
       </div>
       <div
-        className={
-          isOpen
-            ? "absolute inset-0 bg-[#050505] z-40 md:hidden outline-none"
-            : "hidden"
-        }
-      >
-        <nav className="z-50 animate-jump-in animate-duration-600 outline-none border rounded-xl p-4 text-white w-8/12 mx-auto mt-6 bg-primary border-borderColor">
-          <div className="w-full flex justify-between items-center mb-5 opacity-80 font-normal">
-            <p className="">Navigation</p>
-            <button onClick={() => setIsOpen(false)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="white"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-          <ul className="flex flex-col font-medium  opacity-95">
-            <li className="border-b  border-borderColor py-3 hover">
-              <a href="#">About</a>
-            </li>
-            <li className="border-b border-borderColor py-3">
-              <a href="#">Articles</a>
-            </li>
-            <li className="border-b border-borderColor py-3">
-              <a href="#">Projects</a>
-            </li>
-            <li className="border-b border-borderColor py-3">
-              <a href="#">Speaking</a>
-            </li>
-            <li className="border-none py-3">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  className={
+    isOpen
+      ? "absolute inset-0 bg-[#050505]  z-40 sm:hidden outline-none"
+      : "hidden"
+  }
+>
+  {/* Navigation menu */}
+  <nav className="z-50 animate-jump-in animate-duration-600 outline-none border rounded-xl p-4 text-white w-8/12 mx-auto mt-6 bg-primary border-borderColor">
+    <div className="w-full flex justify-between items-center mb-5 opacity-80 font-normal">
+      <p className="">Navigation</p>
+      {/* Close button */}
+      <button onClick={() => setIsOpen(false)}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="white"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+    {/* Navigation links */}
+    <ul className="flex flex-col font-medium  opacity-95">
+      <li className="border-b  border-borderColor py-3 hover">
+        <a href="#">About</a>
+      </li>
+      <li className="border-b border-borderColor py-3">
+        <a href="#">Articles</a>
+      </li>
+      <li className="border-b border-borderColor py-3">
+        <a href="#">Projects</a>
+      </li>
+      <li className="border-b border-borderColor py-3">
+        <a href="#">Speaking</a>
+      </li>
+      <li className="border-none py-3">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
     </header>
   );
 };
