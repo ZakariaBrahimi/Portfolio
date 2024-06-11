@@ -1,16 +1,16 @@
-import { useState } from "react";
+import {  useState } from "react";
+
+
+
 
 const Education = () => {
   const [hightSchoolAccordion, setHightSchoolAccordion] = useState(false)
   const [bachelorAccordion, setBachelorAccordion] = useState(false)
   const [masterAccordion, setMasterAccordion] = useState(false)
-  // const handleToggle = ()=>{}
-  const handleClick = () => {
-    
-  };
-  // const handleRotate = ()=>{}
+
+
   return (
-    <div id="education" className="border-b pb-3 border-[#E2E8F0] dark:border-[#ffffff29]">
+    <div id="education" className=" pb-6 order-b  border-[#E2E8F0] dark:border-[#ffffff29] ">
       <h2 className="font-black text-xl border-b pb-3 border-[#E2E8F0] dark:border-[#ffffff29]">
         🎓 Education
       </h2>

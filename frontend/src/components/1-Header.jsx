@@ -6,7 +6,7 @@ const Header = () => {
   //   TODO: When clicked on any point in the menu, we should close the modal window
   //   const popUpRef = useRef(null)
   return (
-    <header className="md:w-8/12 mx-auto  flex justify-between px- md:px-0 py-5 text-[#1A202C] mb-8">
+    <header className="  flex justify-between py-5 text-[#1A202C] mb-8">
       <nav className=" animate-fade hidden md:flex   dark:text-white opacity-90 ">
       <Link to={'/'} className=" flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-extrabol font-black">
         <Lottie

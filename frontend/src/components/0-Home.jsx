@@ -4,7 +4,7 @@ import Education from "./4-Education"
 
 const Home = () => {
   return (
-    <div className="md:w-8/12 mx-auto ">
+    <div className="  mx-auto ">
         <Hero />
         <Main />
         <Education />

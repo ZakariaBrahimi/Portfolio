@@ -26,7 +26,7 @@ const Works = () => {
       <ol className="py-16 flex flex-col gap-6">
         <li className="flex flex-col gap-3">
           <span className=" text-xs">June 01, 2024</span>
-          <h3 className="font-black text-xl">
+          <h3 className="font-black text-xl"> cred
             Lihlih: Transforming Visa Procedures and Services
           </h3>
           <div className=" "> 
