@@ -11,7 +11,7 @@ const Footer = () => {
     }
   };
   return (
-    <footer className=" mt-14 pb-9 absolute bottom-0 container w-full px-9 sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
+    <footer className=" mt-14 pb-9 ">
       <div className="flex flex-col gap-3">
         <h2 className="font-black text-xl pb-3 border-b border-[#E2E8F0] dark:border-[#ffffff29] ">
           📣 Contact me
