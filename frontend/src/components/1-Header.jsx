@@ -17,7 +17,7 @@ const Header = () => {
           <Lottie
             className="w-9 h-9   bg-green-30"
             animationData={verifiedAnimation}
-            loop={false}
+            loop={true}
           />
           {"Portfolio."}
         </Link>
@@ -52,7 +52,7 @@ const Header = () => {
         <Lottie
           className="w-9 h-9   bg-green-30"
           animationData={verifiedAnimation}
-          loop={false}
+          loop={true}
         />
         {"Portfolio."}
       </Link>

@@ -4,7 +4,7 @@ import Education from "./4-Education"
 
 const Home = () => {
   return (
-    <div className="  mx-auto ">
+    <div className="animate-fade-up  mx-auto ">
         <Hero />
         <Main />
         <Education />

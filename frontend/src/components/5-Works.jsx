@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Works = () => {
   return (
-    <div className="md:w-6/12 mx-auto text-[#ffffffeb]">
+    <div className="animate-fade-up text-[#ffffffeb]">
       <header className="flex flex-col gap-4 ">
         <div className="flex gap-3 items-center">
           <h1 className=" text-4xl font-black">Showcase </h1>
