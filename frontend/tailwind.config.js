@@ -34,4 +34,5 @@ export default {
         require('tailwindcss-animated'),
     ],
     darkMode: 'class',
+    // darkMode: 'selector',
   }
