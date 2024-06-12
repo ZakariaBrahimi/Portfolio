@@ -108,7 +108,7 @@ const Projects = () => {
             <div className="flex flex-wrap gap-5">
               {/* <Link className="flex gap-3 items-center font-bold text-sm bg-[#ffffff14] hover:bg-[#ffffff29] transition-all duration-500 w-fit py-2 px-3 rounded-md" to={`/project/${project.name.replace(/\s+/g, '')}`} state={{projectData: project}}> */}
               <Link
-                to={""}
+                to={project.githubLink}
                 className="flex gap-3 items-center font-bold text-sm bg-[#ffffff14] hover:bg-[#ffffff29] transition-all duration-500 w-fit py-2 px-3 rounded-md"
               >
                 Continue Reading on GitHub
@@ -148,7 +148,7 @@ const Projects = () => {
               </Link>
               {project.livePreview && 
               <Link
-                to={""}
+                to={project.livePreview}
                 className="flex gap-2 items-center font-bold text-sm bg-[#ffffff14] hover:bg-[#ffffff29] transition-all duration-500 w-fit py-2 px-3 rounded-md"
               >
                 Live Demo
