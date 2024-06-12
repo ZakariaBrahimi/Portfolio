@@ -3,6 +3,7 @@ import Header from "./components/1-Header";
 
 import Projects from "./components/5-Projects";
 import Footer from './components/6-Footer'
+import ProjectDetails from "./components/ProjectDetails";
 import Volunteering from "./components/Volunteering";
 import "./index.css";
 import { Routes, Route, Outlet } from "react-router-dom";
@@ -16,7 +17,8 @@ function App() {
           <Outlet/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/works" element={<Projects />} />
+          <Route path="project/:project_name" element={<ProjectDetails/>}/>
+          <Route path="/projects" element={<Projects />}/>
           <Route path="/volunteering" element={<Volunteering />} />
           
         </Routes>

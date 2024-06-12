@@ -65,7 +65,7 @@ const Header = () => {
                   isActive ? "dark:bg-[#3F444E] bg-[#EDF2F7]" : ""
                 }`
               }
-              to="/works"
+              to="/projects"
             >
               Projects
             </NavLink>
