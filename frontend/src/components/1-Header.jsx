@@ -7,6 +7,15 @@ const Header = () => {
   //   TODO: When clicked on any point in the menu, we should close the modal window
   //   const popUpRef = useRef(null)
   const [isOpen, setIsOpen] = useState(false);
+  const handleThemeToggle  = ()=>{
+    console.log('hhhh')
+    let theme = document.getElementsByClassName('dark')
+    console.log(theme)
+    if (theme.length === 1) {
+      theme[0].classList.remove('dark')
+    }
+    console.log(document.getElementsByClassName('dark'))
+  }
   return (
     <header className=" flex justify-between py-5 text-[#1A202C] mb-8">
       <nav className=" animate-fade hidden sm:flex   dark:text-white opacity-90 ">
@@ -58,7 +67,7 @@ const Header = () => {
         {"Portfolio."}
       </Link>
       <div className="flex gap-4">
-      <button className="rounded-full p-2 dark:border-borderColor transition-colors duration-500 hover:bg[] border dark:bg-bgHeader dark:hover:bg-[#3F444E] bg-transparent hover:bg-[#EDF2F7]">
+      <button onClick={handleThemeToggle} className="rounded-full p-2 dark:border-borderColor transition-colors duration-500 hover:bg[] border dark:bg-bgHeader dark:hover:bg-[#3F444E] bg-transparent hover:bg-[#EDF2F7]">
         <svg
           viewBox="0 0 24 24"
           aria-hidden="true"
