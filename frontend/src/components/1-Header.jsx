@@ -142,7 +142,7 @@ const Header = () => {
       <div
         className={
           isOpen
-            ? "absolute inset-0 bg-[#050505]  z-40 sm:hidden outline-none"
+            ? "absolute inset-0 bg-[#050505E5]  z-40 sm:hidden outline-none"
             : "hidden"
         }
       >
