@@ -129,7 +129,7 @@ const Main = () => {
         ))}
       </ol>
       {/* <div className="bg-[#ffffff0f] mb-12 rounded-xl text-center "> */}
-      <div className="bg-[#ffffff0f] mb-12 rounded-xl text-cente    flex items-center justify-center gap-3 py-4 px-5  ">
+      <div className="dark:bg-[#ffffff0f] bg-[#EDF2F7] mb-12 rounded-xl text-cente    flex items-center justify-center gap-3 py-4 px-5  ">
         <div>
           <svg viewBox="0 0 24 24" focusable="false" className=" w-4 h-4">
             <g
@@ -156,7 +156,7 @@ const Main = () => {
           <a href={myResume}
             target="_blank"
             rel="noopener noreferrer"
-            className=" md:inline-block underline font-semibold hover:text-darkGreen transition-colors"
+            className=" md:inline-block  underline font-semibold hover:text-darkGreen transition-colors"
             download=""
           >
             Clicking here!

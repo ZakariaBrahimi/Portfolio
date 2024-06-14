@@ -31,7 +31,7 @@ const Education = () => {
         🎓 Education
       </h2>
       <ul className="flex flex-col mt-7">
-        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E] bg-[#EDF2F7] hover:b-[#E2E8F0] transition-colors duration-500 my-2 shadow-lg">
+        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E]  hover:bg-[#0000000a] transition-colors duration-500 my-2 shadow-lg">
           <h2
             onClick={() => {
               handleClick("master");
@@ -68,7 +68,7 @@ const Education = () => {
             </p>
           </div>
         </li>
-        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E] bg-[#EDF2F7] hover:b-[#E2E8F0] transition-colors duration-500 my-2 shadow-lg">
+        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E] hover:bg-[#0000000a]  transition-colors duration-500 my-2 shadow-lg">
           <h2
             onClick={() => {
               handleClick("bachelor");
@@ -94,16 +94,15 @@ const Education = () => {
             }  mb-4 border-l-2  border-darkGreen overflow-hidden  duration-500 transition-all`}
           >
             <p className="p-3 pb-3 opacity-80 overflow-hidden font-medium">
-               I
-              actively engaged in coursework, online modules, and collaborative
-              projects, mastering programming languages, algorithms, and system
-              design. This relentless pursuit of knowledge and practical
-              experience prepared me to adapt quickly to new technologies and
-              excel in the fast-evolving tech industry.
+              I actively engaged in coursework, online modules, and
+              collaborative projects, mastering programming languages,
+              algorithms, and system design. This relentless pursuit of
+              knowledge and practical experience prepared me to adapt quickly to
+              new technologies and excel in the fast-evolving tech industry.
             </p>
           </div>
         </li>
-        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E] bg-[#EDF2F7] hover:b-[#E2E8F0] transition-colors duration-500 my-2 shadow-lg">
+        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E] hover:bg-[#0000000a] transition-colors duration-500 my-2 shadow-lg">
           <h2
             onClick={() => {
               handleClick("highSchool");

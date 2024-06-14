@@ -34,7 +34,7 @@ const Header = () => {
         <NavLink
           to={"/"}
           className={({ isActive, isPending }) =>
-            `flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-black `
+            `flex items-center mr-8 gap-2 text-darkGree cursor-pointer  font-black `
           }
         >
           <Lottie
@@ -86,7 +86,7 @@ const Header = () => {
       </nav>
       <Link
         to={"/"}
-        className=" sm:hidden dark:text-white  flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-extrabol font-black"
+        className=" sm:hidden dark:text-white flex items-center mr-8 gap-2 cursor-pointer text-xl font-black"
       >
         <Lottie
           className="w-9 h-9   bg-green-30"
