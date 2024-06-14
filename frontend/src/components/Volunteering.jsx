@@ -1,7 +1,7 @@
 
 const Volunteering = () => {
   return (
-    <div className=" w-full h-80 font-black text-4xl flex gap-5 underline cursor-pointer justify-center items-center animate-fade-up text-[#ffffffeb] ">
+    <div className=" w-full h-80 font-black text-4xl flex gap-5 underline cursor-pointer justify-center items-center animate-fade-up dark:text-[#ffffffeb] ">
       <p>Coming Soon</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
