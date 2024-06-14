@@ -61,7 +61,7 @@ const Projects = () => {
         <div className="flex gap-3 items-center">
           <h1 className=" text-4xl font-black">Showcase </h1>
           <span className=" font-bold text-sm bg-[#14b8a629] rounded-lg px-2 py-1 text-[#14b8a6]">
-            10 Projects
+            {projects.length} Projects
           </span>
         </div>
         <p>
