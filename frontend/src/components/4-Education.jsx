@@ -56,7 +56,7 @@ const Education = () => {
               masterAccordion ? "max-h-96" : "max-h-0"
             } mb-4 border-l-2 border-darkGreen overflow-hidden duration-500 transition-all`}
           >
-            <p className="p-3 pb-3 opacity-80 overflow-scroll font-medium">
+            <p className="p-3 pb-3 opacity-80 overflow-hidden font-medium">
               Throughout this dynamic program, I specialized in{" "}
               <span className=" text-darkGreen font-semibold underline">
                 agile methodologies

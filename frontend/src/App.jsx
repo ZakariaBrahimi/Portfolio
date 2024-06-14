@@ -11,7 +11,7 @@ import { Routes, Route, Outlet } from "react-router-dom";
 function App() {
   
   return (
-    <div className="dark:bg-primary bg-[#F5F5F5] b-[#f0f0f0] b-[#f2f3f4] dark:text-white min-h-screen  ">
+    <div className="dark:bg-primary bg-[#FFFFFF] b-[#f0f0f0] b-[#f2f3f4] dark:text-white min-h-screen  ">
       <div className=" container w-full px-9 sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
           <Header />
           <Outlet/>

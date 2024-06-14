@@ -86,7 +86,7 @@ const Header = () => {
       </nav>
       <Link
         to={"/"}
-        className=" sm:hidden text-white  flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-extrabol font-black"
+        className=" sm:hidden dark:text-white  flex items-center mr-8 gap-2 text-darkGree cursor-pointer text-xl font-extrabol font-black"
       >
         <Lottie
           className="w-9 h-9   bg-green-30"
@@ -128,8 +128,8 @@ const Header = () => {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="white"
-            className="w-4 h-4"
+            stroke="#14b8a6"
+            className="w-4 h-4 text-red"
           >
             <path
               strokeLinecap="round"

@@ -56,7 +56,7 @@ const projects = [
 ];
 const Projects = () => {
   return (
-    <div className="animate-fade-up text-[#ffffffeb]">
+    <div className="animate-fade-up my-10 dark:text-[#ffffffeb]">
       <header className="flex flex-col gap-4 ">
         <div className="flex gap-3 items-center">
           <h1 className=" text-4xl font-black">Showcase </h1>
@@ -82,7 +82,7 @@ const Projects = () => {
             <div className=" ">
               <div
                 style={{ backgroundColor: project.bgColor }}
-                className={` w-full h-96 h- rounded-lg font-black text-4xl flex items-center justify-center`}
+                className={` w-full h-96 text-white h- rounded-lg font-black text-4xl flex items-center justify-center`}
               >
                 {" "}
                 {project.name}
@@ -106,27 +106,9 @@ const Projects = () => {
               {/* <Link className="flex gap-3 items-center font-bold text-sm bg-[#ffffff14] hover:bg-[#ffffff29] transition-all duration-500 w-fit py-2 px-3 rounded-md" to={`/project/${project.name.replace(/\s+/g, '')}`} state={{projectData: project}}> */}
               <Link
                 to={project.githubLink}
-                className="flex gap-3 items-center font-bold text-sm bg-[#ffffff14] hover:bg-[#ffffff29] transition-all duration-500 w-fit py-2 px-3 rounded-md"
+                className="flex gap-3 items-center font-bold text-sm dark:bg-[#ffffff14] dark:hover:bg-[#ffffff29] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-all duration-500 w-fit py-2 px-3 rounded-md"
               >
                 Continue Reading on GitHub
-                {/* <svg
-                stroke="currentColor"
-                fill="none"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                focusable="false"
-                className=" w-4 h-4"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                ></path>
-              </svg> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -146,7 +128,7 @@ const Projects = () => {
               {project.livePreview && 
               <Link
                 to={project.livePreview}
-                className="flex gap-2 items-center font-bold text-sm bg-[#ffffff14] hover:bg-[#ffffff29] transition-all duration-500 w-fit py-2 px-3 rounded-md"
+                className="flex gap-2 items-center font-bold text-sm dark:bg-[#ffffff14] dark:hover:bg-[#ffffff29] bg-[#EDF2F7] hover:bg-[#E2E8F0] transition-all duration-500 w-fit py-2 px-3 rounded-md"
               >
                 Live Demo
                 {/* <svg
