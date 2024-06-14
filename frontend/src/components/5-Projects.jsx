@@ -65,11 +65,8 @@ const Projects = () => {
           </span>
         </div>
         <p>
-          Recently, I've ventured into showcasing my work online, blending
-          passion with profession. It's a burgeoning collection that reflects my
-          journey and growth in the digital realm. Feel free to use the search
-          field below to discover projects that resonate with your interests or
-          inspire your next big idea.
+        Explore my chosen collection of projects, where I combine passion and career to develop creative digital solutions. From agile tech product development to strategic business strategy, each project represents my experience, growth, and dedication to excellence. Use the search field below to find work that speaks to your interests or inspires your next big idea.
+
         </p>
         <input
           className=" bg-transparent border-subtitle border-2 px-2 py-2 rounded-xl opacity-85 mt-6 outline-none active:outline-[#14b8a6] active:border-none"

@@ -149,16 +149,16 @@ const Header = () => {
         {/* Navigation menu */}
         <nav className="z-50 animate-jump-in animate-duration-600 outline-none border rounded-xl p-4 text-white w-8/12 mx-auto mt-6 bg-primary border-borderColor">
           <div className="w-full flex justify-between items-center mb-5 opacity-80 font-normal">
-            <p className="">Navigation</p>
+            <p className=""></p>
             {/* Close button */}
-            <button onClick={() => setIsOpen(false)}>
+            <button className=" hover:rotate-180 transition-all duration-500" onClick={() => setIsOpen(false)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="white"
-                className="w-6 h-6"
+                className=" w-6 h-6 hover:w-[1.53rem] hover:h-[1.53rem]"
               >
                 <path
                   strokeLinecap="round"
@@ -169,23 +169,45 @@ const Header = () => {
             </button>
           </div>
           {/* Navigation links */}
-          <ul className="flex flex-col font-medium  opacity-95">
-            <li className="border-b  border-borderColor py-3 hover">
-              <a href="#">About</a>
-            </li>
-            <li className="border-b border-borderColor py-3">
-              <a href="#">Articles</a>
-            </li>
-            <li className="border-b border-borderColor py-3">
-              <a href="#">Projects</a>
-            </li>
-            <li className="border-b border-borderColor py-3">
-              <a href="#">Speaking</a>
-            </li>
-            <li className="border-none py-3">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
+          <div className="flex flex-col items-start gap-4 w-full font-bold">
+         
+            <NavLink
+            onClick={()=>setIsOpen(false)}
+              className={({ isActive, isPending }) =>
+                `   px-3 w-full py-2 rounded-lg transition-all  duration-500 cursor-pointer hover:dark:bg-[#3F444E] hover:bg-[#EDF2F7] ${
+                  isActive ? "dark:bg-[#3F444E] bg-[#EDF2F7]" : ""
+                }`
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+
+
+
+            <NavLink
+            onClick={()=>setIsOpen(false)}
+              className={({ isActive, isPending }) =>
+                `   px-3 w-full py-2 rounded-lg transition-all  duration-500 cursor-pointer hover:dark:bg-[#3F444E] hover:bg-[#EDF2F7] ${
+                  isActive ? "dark:bg-[#3F444E] bg-[#EDF2F7]" : ""
+                }`
+              }
+              to="/projects"
+            >
+              Projects
+            </NavLink>
+            <NavLink
+            onClick={()=>setIsOpen(false)}
+              className={({ isActive, isPending }) =>
+                `   px-3 py-2 w-full rounded-lg transition-all  duration-500 cursor-pointer hover:dark:bg-[#3F444E] hover:bg-[#EDF2F7] ${
+                  isActive ? "dark:bg-[#3F444E] bg-[#EDF2F7]" : ""
+                }`
+              }
+              to="volunteering"
+            >
+              Volunteering
+            </NavLink>
+        </div>
         </nav>
       </div>
     </header>
