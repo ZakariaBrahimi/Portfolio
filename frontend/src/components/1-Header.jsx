@@ -29,7 +29,7 @@ const Header = () => {
 
   
   return (
-    <header className=" flex justify-between py-5 text-[#1A202C] mb-8">
+    <header className=" flex justify-between py-5 text-[#1A202C] sm:mb-8">
       <nav className=" animate-fade hidden sm:flex   dark:text-white opacity-90 ">
         <NavLink
           to={"/"}
