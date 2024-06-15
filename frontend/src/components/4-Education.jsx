@@ -31,7 +31,7 @@ const Education = () => {
         🎓 Education
       </h2>
       <ul className="flex flex-col mt-7">
-        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E]  hover:bg-[#0000000a] transition-colors duration-500 my-2 shadow-lg">
+        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:bg-[#ffffff30]  bg-[#0000000a] transition-colors duration-500 my-2 shadow-lg">
           <h2
             onClick={() => {
               handleClick("master");
@@ -68,7 +68,7 @@ const Education = () => {
             </p>
           </div>
         </li>
-        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E] hover:bg-[#0000000a]  transition-colors duration-500 my-2 shadow-lg">
+        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:bg-[#ffffff30] hover:bg-[#0000000a]  transition-colors duration-500 my-2 shadow-lg">
           <h2
             onClick={() => {
               handleClick("bachelor");
@@ -102,7 +102,7 @@ const Education = () => {
             </p>
           </div>
         </li>
-        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:b-[#3F444E] dark:hover:bg-[#0000000a] transition-colors duration-500 my-2 shadow-lg">
+        <li className="dark:bg-[#ffffff14] px-3 py-[2.5px] rounded-md dark:hover:bg-[#ffffff30] hover:bg-[#0000000a] transition-colors duration-500 my-2 shadow-lg">
           <h2
             onClick={() => {
               handleClick("highSchool");
