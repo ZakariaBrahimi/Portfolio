@@ -82,20 +82,18 @@ const Hero = () => {
           </div>
         </h1>
         <p className="opacity- leading-7 text-base dark:text-subtitle text-[#1A202C]">
-          👋 Solution-oriented and problem solver with 2 years of experience
-          building and maintaining software. Enthusiastic about Agile management
-          and collaborating with teams to deliver impactful products. Currently
-          looking for opportunities as a{" "}
+
+
+        👋 a Full Stack Web Developer with 2 years of Experience specializing in {" "}
           <span className=" text-darkGreen font-semibold underline">
             Django
           </span>{" "}
           <span className=" text-darkGreen"> & </span>
           <span className=" text-darkGreen font-semibold underline">
-            React Developer
+            React
           </span>{" "}
-          {}
-          with a passionate and ambitious team. Let's tackle major problems
-          together!{" "}
+          {} for creating responsive web applications. Skilled in effectively in gathering and understanding requirements from stakeholders, ensuring clear communication throughout the development lifecycle to achieve project goals.
+          {" "}
           <p className="font-semibold mt-3">
             #SoftwareDevelopment #AgileEnthusiast #TeamPlayer
           </p>
