@@ -2,7 +2,7 @@ import Lottie from "lottie-react";
 import arrow from "../assets/arrow.json";
 import myPicture from "../assets/myPic3.jpg";
 // import verifiedAnimation from "../assets/verifiedAnimation1.json";
-import myResume from '../assets/ResumeV2.pdf'
+import myResume from '../assets/Resume.pdf'
 
 const Hero = () => {
   return (
