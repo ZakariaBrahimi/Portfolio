@@ -1,4 +1,4 @@
-import myResume from '../assets/ResumeV2.pdf'
+import myResume from '../assets/Resume.pdf'
 
 const works = [
   {
