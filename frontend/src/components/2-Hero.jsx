@@ -15,11 +15,7 @@ const Hero = () => {
             alt=""
           />
           <div className="flex gap-2 items-center justify-start">
-            {/* <Lottie
-              className="w-12 h-12 bg-green-30"
-              animationData={verifiedAnimation}
-              loop={false}
-              /> */}
+            
           </div>
         </div>
         <h1 className="flex flex-col sm:flex-row sm:items-center gap-3 font-bold text-3xl leading-[3.3rem] dark:text-title text-[#1A202C]">
