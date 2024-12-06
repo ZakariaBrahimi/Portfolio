@@ -2,11 +2,25 @@ import myResume from '../assets/Resume.pdf'
 
 const works = [
   {
+    companyName: "Yassir (YC20)",
+    role: "Product Manager",
+    description:
+      "Yassir is the leading super App in the Maghreb region set to changing the way daily services are provided. It currently operates in 45 cities across Algeria, Morocco, and Tunisia with recent expansions into France, Canada, and Sub-Saharan Africa. It is backed (~$200M in funding) by VCs from Silicon Valley, Europe, and other parts of the world.",
+    period: "Nov, 2024 - Present",
+    link: "https://senaresearch-dz.com",
+    tags: [
+      "Tech-Driven Services",
+      "Product Management",
+      "Agile Product Development",
+      "High-Growth Startup",
+    ],
+  },
+  {
     companyName: "SenaResearch",
     role: "Fullstack developer & Product Manager",
     description:
       "Sena Research is a platform designed to serve as an intermediary between students and university professors across all academic disciplines. The platform's mission is to deliver top-notch educational services, facilitating students in successfully navigating their academic endeavors.",
-    period: "Jan, 2024 - Present",
+    period: "Jan, 2024 - Sep, 2024",
     link: "https://senaresearch-dz.com",
     tags: [
       "Educational Services",

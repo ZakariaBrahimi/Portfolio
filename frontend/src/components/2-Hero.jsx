@@ -2,7 +2,7 @@ import Lottie from "lottie-react";
 import arrow from "../assets/arrow.json";
 import myPicture from "../assets/myPic3.jpg";
 // import verifiedAnimation from "../assets/verifiedAnimation1.json";
-import myResume from '../assets/Resume.pdf'
+import myResume from "../assets/Resume.pdf";
 
 const Hero = () => {
   return (
@@ -14,9 +14,7 @@ const Hero = () => {
             src={myPicture}
             alt=""
           />
-          <div className="flex gap-2 items-center justify-start">
-            
-          </div>
+          <div className="flex gap-2 items-center justify-start"></div>
         </div>
         <h1 className="flex flex-col sm:flex-row sm:items-center gap-3 font-bold text-3xl leading-[3.3rem] dark:text-title text-[#1A202C]">
           <span className="font-bol">B. Zakaria Abdessamed </span>
@@ -78,9 +76,8 @@ const Hero = () => {
           </div>
         </h1>
         <p className="opacity- leading-7 text-base dark:text-subtitle text-[#1A202C]">
-
-
-        👋 a Full Stack Web Developer with 2 years of Experience specializing in {" "}
+          👋 Dynamic <span className=" font-bold">Product Manager </span> with a solid background in <span className=" font-bold">Fullstack
+          Development </span> using{" "}
           <span className=" text-darkGreen font-semibold underline">
             Django
           </span>{" "}
@@ -88,10 +85,17 @@ const Hero = () => {
           <span className=" text-darkGreen font-semibold underline">
             React
           </span>{" "}
-          {} for creating responsive web applications. Skilled in effectively in gathering and understanding requirements from stakeholders, ensuring clear communication throughout the development lifecycle to achieve project goals.
-          {" "}
+          and 3+ years of experience in product lifecycle management,
+          requirement gathering, and cross-functional team coordination. Skilled
+          in turning simple ideas into actionable product features through
+          effective stakeholder collaboration, clear communication, and a deep
+          understanding of user needs.
+          <br />
+          Seeking opportunities to leverage both technical and product
+          management expertise with a growth-focused team addressing meaningful
+          challenges.
           <p className="font-semibold mt-3">
-            #SoftwareDevelopment #AgileEnthusiast #TeamPlayer
+            #SoftwareDevelopment #ProductManagement #AgileEnthusiast
           </p>
         </p>
         {/* SOCIAL ACCOUNTS */}
@@ -174,10 +178,13 @@ const Hero = () => {
           </div>
           <span className="mx-6 font-bold hidden sm:inline-block">Or</span>
           <p className="sm:pt-0 pt-4 flex items-center">
-          <span className="  mr-4 font-bold sm:hidden">
-            Or
-          </span>
-            <a rel="noopener noreferrer" target="_blank" href={myResume} className="underline  flex items-center gap-2 cursor-pointer hover:text-darkGreen transition-colors duration-500 font-semibold">
+            <span className="  mr-4 font-bold sm:hidden">Or</span>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={myResume}
+              className="underline  flex items-center gap-2 cursor-pointer hover:text-darkGreen transition-colors duration-500 font-semibold"
+            >
               <span>Download My Resume</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +202,6 @@ const Hero = () => {
               </svg>
             </a>
           </p>
-          
         </div>
       </div>
     </section>
