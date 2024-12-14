@@ -2,7 +2,7 @@ import myResume from '../assets/Resume.pdf'
 
 const works = [
   {
-    companyName: "Yassir (YC20)",
+    companyName: "Yassir (YC W20)",
     role: "Product Manager",
     description:
       "Yassir is the leading super App in the Maghreb region set to changing the way daily services are provided. It currently operates in 45 cities across Algeria, Morocco, and Tunisia with recent expansions into France, Canada, and Sub-Saharan Africa. It is backed (~$200M in funding) by VCs from Silicon Valley, Europe, and other parts of the world.",
